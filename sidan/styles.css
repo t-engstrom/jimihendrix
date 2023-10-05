@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    background-image: url(bilder/170505160212-jimi-hendrix-tease-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper {
+    height: 100%;
+    width: 80vw;
+    
+    background-color: rgba(0,0,0,0.2);
+
+    margin-top: 45px;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: BungeeShade;
+    src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: BarlowCondensed;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: BungeeOutlined;
+    src: url(fonts/Bungee_Outline/BungeeOutline-Regular.ttf);
+}
+
+@font-face {
+    font-family: BarlowSemiCondensed;
+    src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: BarlowCondensedBold;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
+
+h1 {
+    font-family: BungeeShade;
+    color:lightgray;
+
+    font-size: 80px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+
+    margin: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 5px;   
+}
+
+nav a {
+    background-color: rgba(238, 231, 231, 0.5);
+
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: BarlowSemiCondensed;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+nav > a:nth-of-type(2) {
+    font-family: BarlowCondensedBold;
+    box-shadow: 0px 0px 10px white;
+    border: 1px solid white;
+    pointer-events: none;
+}
+
+nav > a:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: BungeeOutlined;
+    color: lightgray;   
+    margin: 0;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: BarlowCondensed;
+    margin: 0;
+
+    color: lightgray;
+    font-size: 27px;
+}
+
+p, ul{
+    font-family: BarlowSemiCondensed;
+
+    color: lightgray;
+}
+
+ol {
+    background-color: rgb(255, 217, 40);
+    width: 100%;
+    margin-top: 5px;
+    padding: 20px;
+} 
+
+.box {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px;
+
+    display: flex;
+}
+
+.box > div > p:nth-of-type(1) {
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+
+.box > div > img:nth-of-type(1){
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.box > div:nth-child(1) {
+    width: 60%;
+}
+
+.box > div:nth-child(2) {
+    width: 40%;
+}
+
+.box > div:nth-child(2) > div {
+    display: flex;
+
+    color: rgb(171, 94, 142);
+
+    gap: 10px;
+}
+
+.box > div:nth-child(2) > div > div {
+    display: flex;
+
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(1) > ol {
+    border-radius: 0 0 0 20px;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(2) > ol {
+    border-radius: 0 0 20px 0; 
+}
+
+.box > div:nth-child(2) > div > div:nth-child(1) > ol > p {
+    margin: 0;
+    padding: 0;
+   
+    color: rgb(171, 94, 142);
+    font-size: 13px;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(2) > ol > p {
+    margin: 0;
+    padding: 0;
+    
+    
+    color: rgb(171, 94, 142);
+    font-size: 13px;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1) {
+    font-family: BarlowCondensed;
+    font-size: 20px;
+}
+
+
+.box > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
+    font-family: BarlowCondensed;
+    font-size: 20px;
+}
