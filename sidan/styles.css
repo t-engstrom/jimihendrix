@@ -90,6 +90,8 @@ nav > a:hover {
     color: white;
 }
 
+/* Box nr 1 */
+
 ul {
     list-style: none;
     margin-top: 0;
@@ -121,16 +123,8 @@ ol {
     background-color: rgb(255, 217, 40);
     width: 100%;
     margin-top: 0.5vw;
-    padding: 2vw;
+    padding: 1vw;
 } 
-
-.box {
-    background-color: rgba(0,0,0,0.5);
-    border: 1px solid white;
-    border-radius: 20px;
-    margin: 2vw;
-    padding: 1.5vw;
-}
 
 main {
     display: flex;
@@ -182,9 +176,7 @@ main > div:nth-child(2) {
 main > div:nth-child(2) > div {
     display: flex;
 
-    color: rgb(171, 94, 142);
-
-    gap: 1vw;
+    gap: 0.5vw;
 }
 main > div:nth-child(2) > div > div {
     display: flex;
@@ -229,27 +221,47 @@ main > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
 
-    gap: 0.5vw;
+    gap: 0.3vw;
 }
 
-.box > div > div:nth-child(1){
+.box {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 2vw;
+    padding: 1.5vw;
+}
+
+.box > div > div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1vw;
+}
+
+.box > div > div:nth-child(1) {
     background-color: rgb( 171, 94, 142);
     border-radius: 20px 0 20px 20px;
 }
 
-
-.box > div > div:nth-child(3){
+.box > div > div:nth-child(3) {
     grid-column: 4 / 5;
 
-    height: 15vw;
-    width: 15vw;
+    height: 12vw;
+    width: 11vw;
     background-image: url(bilder/chandler.jpg);
     background-size: cover;
+    background-position: center;
     
     border-radius: 0 20px 20px 20px;
+
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
-.box > div > div:nth-child(2){
+.box > div > div:nth-child(2) {
     background-color: rgb( 171, 94, 142);
 
     grid-column: 3 / 4;
@@ -257,17 +269,211 @@ main > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
     border-radius: 20px 20px 20px 0;
 }
 
-.box > div > div:nth-child(4){
+.box > div > div:nth-child(4) {
 background-color: rgb( 171, 94, 142);
 
 border-radius: 20px 20px 0 20px;
 }
 
-.box > div > div > p{
+.box > div > div > p {
     color: rgb(255, 217, 40);
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
-.box > div > div:nth-child(3) > p{
+.box > div > div:nth-child(3) > p {
+    color: white;
+}
+
+/* Box nr 2 */
+
+.box2 ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 4vw;
+}
+
+.box2 h2 {
+    font-family: BungeeOutlined;
+    color: lightgray;   
+    margin: 0;
+    font-size: 2vw;
+}
+
+box2 h3 {
+    font-family: BarlowCondensed;
+    margin: 0;
+
+    color: lightgray;
+    font-size: 1.7vw;
+}
+
+.box2 p, ul{
+    font-family: BarlowSemiCondensed;
+
+    color: lightgray;
+}
+
+.box2 ol {
+    background-color: rgb(255, 217, 40);
+    width: 100%;
+    margin-top: 0.5vw;
+    padding: 1vw;
+} 
+
+section {
+    display: flex;
+}
+
+section > div > p:nth-of-type(1) {
+    padding-top: 3vw;
+    margin-bottom: 0;
+}
+
+section > div > div:nth-child(1) img:nth-of-type(1){
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+    position: relative;
+    transition: opacity 1s;
+
+    z-index: 1;
+}
+
+section > div > div:nth-child(1) > img:nth-of-type(2){
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+}
+
+section > div:nth-child(2) > div:nth-child(1) {
+    position: relative;
+}
+
+section > div > div:nth-child(1) > img:nth-of-type(1):hover{
+    opacity: 0;
+}
+
+section > div:nth-child(1) {
+    width: 60%;
+}
+
+section > div:nth-child(2) {
+    width: 40%;
+    position: relative;
+}
+section > div:nth-child(2) > div {
+    display: flex;
+
+    gap: 0.5vw;
+}
+section > div:nth-child(2) > div > div {
+    display: flex;
+
+    flex-basis: 0;
+    flex-grow: 1;
+}
+section > div:nth-child(2) > div > div:nth-child(1) > ol {
+    border-radius: 0 0 0 20px;
+}
+
+section > div:nth-child(2) > div > div:nth-child(2) > ol {
+    border-radius: 0 0 20px 0; 
+}
+
+section > div:nth-child(2) > div > div:nth-child(1) > ol > p {
+    margin: 0;
+    padding: 0;
+   
+    color: rgb(171, 94, 142);
+    font-size: 1vw;
+}
+section > div:nth-child(2) > div > div:nth-child(2) > ol > p {
+    margin: 0;
+    padding: 0;
+    
+    
+    color: rgb(171, 94, 142);
+    font-size: 1vw;
+}
+section > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1) {
+    font-family: BarlowCondensed;
+    font-size: 1.5vw;
+}
+
+section > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
+    font-family: BarlowCondensed;
+    font-size: 1.5vw;
+}
+
+.box2 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+
+    gap: 0.3vw;
+}
+
+.box2 {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 2vw;
+    padding: 1.5vw;
+}
+
+.box2 > div > div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1vw;
+}
+
+.box2 > div > div:nth-child(1) {
+    background-color: rgb( 171, 94, 142);
+    border-radius: 20px 0 20px 20px;
+}
+
+.box2 > div > div:nth-child(3) {
+    grid-column: 4 / 5;
+
+    height: 12vw;
+    width: 11vw;
+    background-image: url(bilder/chandler.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: 0 20px 20px 20px;
+
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.box2 > div > div:nth-child(2) {
+    background-color: rgb( 171, 94, 142);
+
+    grid-column: 3 / 4;
+
+    border-radius: 20px 20px 20px 0;
+}
+
+.box2 > div > div:nth-child(4) {
+background-color: rgb( 171, 94, 142);
+
+border-radius: 20px 20px 0 20px;
+}
+
+.box2 > div > div > p {
+    color: rgb(255, 217, 40);
+    font-size: 1vw;
+}
+
+.box2 > div > div:nth-child(3) > p {
     color: white;
 }
