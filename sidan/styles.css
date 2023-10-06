@@ -15,7 +15,7 @@ body {
     
     background-color: rgba(0,0,0,0.2);
 
-    margin-top: 45px;
+    margin-top: 4vw;
     border-radius: 20px;
 }
 
@@ -48,19 +48,19 @@ h1 {
     font-family: BungeeShade;
     color:lightgray;
 
-    font-size: 80px;
+    font-size: 6vw;
     margin: 0;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 2vw;
+    margin-left: 2vw;
 }
 
 nav {
     display: flex;
 
-    margin: 20px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    gap: 5px;   
+    margin: 2vw;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    gap: 0.5vw;   
 }
 
 nav a {
@@ -68,12 +68,12 @@ nav a {
 
     flex-basis: 0;
     flex-grow: 1;
-    padding: 15px;
+    padding: 1vw;
     border-radius: 10px;
 
     text-align: center;
     font-family: BarlowSemiCondensed;
-    font-size: 30px;
+    font-size: 2vw;
     color: rgba(0,0,0,0.8);
     text-decoration: none;
 }
@@ -93,14 +93,14 @@ nav > a:hover {
 ul {
     list-style: none;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 4vw;
 }
 
 h2 {
     font-family: BungeeOutlined;
     color: lightgray;   
     margin: 0;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 h3 {
@@ -108,7 +108,7 @@ h3 {
     margin: 0;
 
     color: lightgray;
-    font-size: 27px;
+    font-size: 1.7vw;
 }
 
 p, ul{
@@ -120,85 +120,154 @@ p, ul{
 ol {
     background-color: rgb(255, 217, 40);
     width: 100%;
-    margin-top: 5px;
-    padding: 20px;
+    margin-top: 0.5vw;
+    padding: 2vw;
 } 
 
 .box {
     background-color: rgba(0,0,0,0.5);
     border: 1px solid white;
     border-radius: 20px;
-    margin: 20px;
-    padding: 15px;
+    margin: 2vw;
+    padding: 1.5vw;
+}
 
+main {
     display: flex;
 }
 
-.box > div > p:nth-of-type(1) {
-    padding-top: 40px;
+main > div > p:nth-of-type(1) {
+    padding-top: 3vw;
     margin-bottom: 0;
 }
 
-.box > div > img:nth-of-type(1){
+main > div > div:nth-child(1) img:nth-of-type(1){
     width: 100%;
     border-radius: 20px 20px 0 0;
+
+    position: relative;
+    transition: opacity 1s;
+
+    z-index: 1;
 }
 
-.box > div:nth-child(1) {
+main > div > div:nth-child(1) > img:nth-of-type(2){
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+}
+
+main > div:nth-child(2) > div:nth-child(1) {
+    position: relative;
+}
+
+main > div > div:nth-child(1) > img:nth-of-type(1):hover{
+    opacity: 0;
+}
+
+main > div:nth-child(1) {
     width: 60%;
 }
 
-.box > div:nth-child(2) {
+main > div:nth-child(2) {
     width: 40%;
+    position: relative;
 }
-
-.box > div:nth-child(2) > div {
+main > div:nth-child(2) > div {
     display: flex;
 
     color: rgb(171, 94, 142);
 
-    gap: 10px;
+    gap: 1vw;
 }
-
-.box > div:nth-child(2) > div > div {
+main > div:nth-child(2) > div > div {
     display: flex;
 
     flex-basis: 0;
     flex-grow: 1;
 }
-
-.box > div:nth-child(2) > div > div:nth-child(1) > ol {
+main > div:nth-child(2) > div > div:nth-child(1) > ol {
     border-radius: 0 0 0 20px;
 }
 
-.box > div:nth-child(2) > div > div:nth-child(2) > ol {
+main > div:nth-child(2) > div > div:nth-child(2) > ol {
     border-radius: 0 0 20px 0; 
 }
 
-.box > div:nth-child(2) > div > div:nth-child(1) > ol > p {
+main > div:nth-child(2) > div > div:nth-child(1) > ol > p {
     margin: 0;
     padding: 0;
    
     color: rgb(171, 94, 142);
-    font-size: 13px;
+    font-size: 1vw;
 }
-
-.box > div:nth-child(2) > div > div:nth-child(2) > ol > p {
+main > div:nth-child(2) > div > div:nth-child(2) > ol > p {
     margin: 0;
     padding: 0;
     
     
     color: rgb(171, 94, 142);
-    font-size: 13px;
+    font-size: 1vw;
+}
+main > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1) {
+    font-family: BarlowCondensed;
+    font-size: 1.5vw;
 }
 
-.box > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1) {
+main > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
     font-family: BarlowCondensed;
-    font-size: 20px;
+    font-size: 1.5vw;
+}
+
+.box > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+
+    gap: 0.5vw;
+}
+
+.box > div > div:nth-child(1){
+    background-color: rgb( 171, 94, 142);
+    border-radius: 20px 0 20px 20px;
 }
 
 
-.box > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
-    font-family: BarlowCondensed;
-    font-size: 20px;
+.box > div > div:nth-child(3){
+    grid-column: 4 / 5;
+
+    height: 15vw;
+    width: 15vw;
+    background-image: url(bilder/chandler.jpg);
+    background-size: cover;
+    
+    border-radius: 0 20px 20px 20px;
+}
+
+.box > div > div:nth-child(2){
+    background-color: rgb( 171, 94, 142);
+
+    grid-column: 3 / 4;
+
+    border-radius: 20px 20px 20px 0;
+}
+
+.box > div > div:nth-child(4){
+background-color: rgb( 171, 94, 142);
+
+border-radius: 20px 20px 0 20px;
+}
+
+.box > div > div > p{
+    color: rgb(255, 217, 40);
+    font-size: 1.2vw;
+}
+
+.box > div > div:nth-child(3) > p{
+    color: white;
 }
