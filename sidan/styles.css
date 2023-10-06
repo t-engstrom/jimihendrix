@@ -229,7 +229,7 @@ main > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
     border: 1px solid white;
     border-radius: 20px;
     margin: 2vw;
-    padding: 1.5vw;
+    padding: 1vw;
 }
 
 .box > div > div {
@@ -314,7 +314,7 @@ box2 h3 {
 }
 
 .box2 ol {
-    background-color: rgb(255, 217, 40);
+    background-color: rgb(48, 113, 162);
     width: 100%;
     margin-top: 0.5vw;
     padding: 1vw;
@@ -327,6 +327,10 @@ section {
 section > div > p:nth-of-type(1) {
     padding-top: 3vw;
     margin-bottom: 0;
+}
+
+section > div > p:nth-of-type(2) {
+    padding-right: 1.5vw;
 }
 
 section > div > div:nth-child(1) img:nth-of-type(1){
@@ -390,7 +394,7 @@ section > div:nth-child(2) > div > div:nth-child(1) > ol > p {
     margin: 0;
     padding: 0;
    
-    color: rgb(171, 94, 142);
+    color: rgb(229, 230, 215);
     font-size: 1vw;
 }
 section > div:nth-child(2) > div > div:nth-child(2) > ol > p {
@@ -398,7 +402,7 @@ section > div:nth-child(2) > div > div:nth-child(2) > ol > p {
     padding: 0;
     
     
-    color: rgb(171, 94, 142);
+    color: rgb(229, 230, 215);
     font-size: 1vw;
 }
 section > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1) {
@@ -413,7 +417,7 @@ section > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
 
 .box2 > div {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
 
     gap: 0.3vw;
 }
@@ -436,16 +440,18 @@ section > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
 }
 
 .box2 > div > div:nth-child(1) {
-    background-color: rgb( 171, 94, 142);
-    border-radius: 20px 0 20px 20px;
+    background-color: rgb(229, 230, 215);
+    border-radius: 20px 20px 20px 0;
+
+    grid-column: 1 / 2;
 }
 
 .box2 > div > div:nth-child(3) {
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
 
-    height: 12vw;
-    width: 11vw;
-    background-image: url(bilder/chandler.jpg);
+    height: 10vw;
+
+    background-image: url(bilder/eddie.jpg);
     background-size: cover;
     background-position: center;
     
@@ -456,24 +462,32 @@ section > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
 }
 
 .box2 > div > div:nth-child(2) {
-    background-color: rgb( 171, 94, 142);
+    background-color: rgb( 229, 230, 215);
 
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
 
-    border-radius: 20px 20px 20px 0;
+    border-radius: 0 20px 20px 20px;
 }
 
 .box2 > div > div:nth-child(4) {
-background-color: rgb( 171, 94, 142);
+background-color: rgb( 229, 230, 215);
 
 border-radius: 20px 20px 0 20px;
 }
 
 .box2 > div > div > p {
-    color: rgb(255, 217, 40);
+    color: rgb(48, 113, 162);
     font-size: 1vw;
 }
 
 .box2 > div > div:nth-child(3) > p {
     color: white;
+}
+
+footer {
+color: white;
+font-family: BarlowSemiCondensed;
+font-size: 1vw;
+padding: 3vw 0 1vw 1vw;
+
 }
